@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+button.add-order-btn {
+    background-color: #9B31F9;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+button.add-order-btn i {
+    margin-right: 10px;
+}
+
+button.add-order-btn:hover {
+    background-color: #218838;
+}
+
+table.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table.orders-table thead th {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+table.orders-table tbody td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+table.orders-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table.orders-table tbody td a {
+    margin: 0 5px;
+    color: #007bff;
+}
+
+table.orders-table tbody td a:hover {
+    color: #0056b3;
+}
+
+table.orders-table tbody td a i {
+    font-size: 16px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: gray;
+}

@@ -1,0 +1,80 @@
+
+* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 2px; */
+    height: 80px;
+    background-color: rgba(0, 0, 0, 100); /* Adjust transparency for a dim effect */
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.logo img {
+    width: 220px;
+    max-height: 100%;
+}
+.header-wrapper1 {
+    margin-bottom:80px; /* Space below the header */
+}
+
+.categories-container {
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.category-card {
+    background: white;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: block;
+    /* box-sizing: border-box; */
+    
+}
+
+.category-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.category-card p {
+    font-size: 16px;
+    font-weight: bold;
+}
+.category-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Ensure text color remains the same */
+    display: block; /* Make the link cover the entire card */
+}
+
+.nav1 a {
+    color: #333;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.category-card:nth-child(5) {
+    
+    grid-column-start: 1;
+    
+}
